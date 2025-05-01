@@ -51,7 +51,7 @@ Drowsi is an intelligent driver drowsiness detection system that uses computer v
 
 1. **Clone the Repository**
    ```bash
-   git clone [repository-url]
+   git clone https://github.com/lokeshpanthangi/drowsi.git
    cd drowsi
    ```
 
