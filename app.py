@@ -1,3 +1,4 @@
+import os
 import cv2
 import mediapipe as mp
 import numpy as np
@@ -33,7 +34,7 @@ Session(app)  # Initialize session
 
 # Initialize MongoDB
 # Corrected MongoDB connection
-client = MongoClient("mongodb+srv://nikhathmahammad12:AN2bMxZTXGndN4or@cluster0.asogv.mongodb.net/?retryWrites=true&w=majority")
+client = MongoClient(os.getenv("MONGO_URI"))
 db = client["Drowsi"]  # Replace with your database name
 users_collection = db["Drowsi"]  # Replace with your collection name
 
